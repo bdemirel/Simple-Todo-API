@@ -1,7 +1,7 @@
 import express from 'express';
+import dotenv from 'dotenv';
 import morgan from 'morgan';
 import cors from 'cors';
-import dotenv from 'dotenv';
 import routes from './routes';
 
 // Configuration
