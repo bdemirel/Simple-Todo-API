@@ -18,6 +18,7 @@
         "indent": [
             "error",
             "tab"
-        ]
+        ],
+        "no-tabs": "off"
     }
 }
