@@ -1,0 +1,12 @@
+# personal
+.vscode/
+.todo
+
+# dependencies
+node_modules/
+
+# production
+dist/
+
+# misc
+.env.local
