@@ -1,8 +1,12 @@
 import { Model, DataTypes } from 'sequelize';
 import sequelize from '../common/db';
-import Item from './Item';
 
-class List extends Model { }
+class List extends Model {
+	public id: number;
+
+	public name: string;
+}
+
 List.init({
 	id: {
 		type: DataTypes.INTEGER,
@@ -11,7 +15,5 @@ List.init({
 	},
 	name: DataTypes.STRING,
 }, { sequelize });
-
-List.hasMany(Item);
 
 export default List;

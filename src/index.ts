@@ -12,6 +12,7 @@ const port = process.env.SERVER_PORT;
 // Middleware
 app.use(cors());
 app.use(morgan('dev'));
+app.use(express.urlencoded());
 
 // Routes
 app.get('/', (req, res) => res.send('Welcome to my simple To-Do Backend!'));

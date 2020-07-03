@@ -1,6 +1,5 @@
 import { Model, DataTypes } from 'sequelize';
 import sequelize from '../common/db';
-import List from './List';
 
 class Item extends Model {}
 Item.init({
@@ -11,7 +10,5 @@ Item.init({
 	},
 	name: DataTypes.STRING,
 }, { sequelize });
-
-Item.belongsTo(List);
 
 export default Item;
