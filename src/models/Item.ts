@@ -1,7 +1,12 @@
 import { Model, DataTypes } from 'sequelize';
 import sequelize from '../common/db';
 
-class Item extends Model {}
+class Item extends Model {
+	public id: number;
+
+	public name: string;
+}
+
 Item.init({
 	id: {
 		type: DataTypes.INTEGER,
@@ -9,6 +14,10 @@ Item.init({
 		autoIncrement: true,
 	},
 	name: DataTypes.STRING,
+	list_id: {
+		type: DataTypes.INTEGER,
+		allowNull: false,
+	},
 }, { sequelize });
 
 export default Item;

@@ -43,7 +43,7 @@ export const update = (req : express.Request, res : express.Response) => {
 };
 
 export const destroy = (req : express.Request, res : express.Response) => {
-	List.destroy({ where: { name: req.params.id } })
+	List.destroy({ where: { id: req.params.id } })
 		.then(() => res.sendStatus(204))
 		.catch((err) => res.status(500).json({
 			name: err.name,
