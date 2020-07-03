@@ -1,5 +1,5 @@
 import { Model } from 'sequelize';
-import sequelize from '../db';
+import sequelize from '../common/db';
 
 class Item extends Model {}
 Item.init({

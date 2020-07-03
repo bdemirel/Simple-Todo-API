@@ -1,7 +1,7 @@
 import { Model } from 'sequelize';
-import sequelize from '../db';
+import sequelize from '../common/db';
 
-class List extends Model {}
+class List extends Model { }
 List.init({
 
 }, { sequelize });

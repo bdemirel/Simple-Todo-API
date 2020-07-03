@@ -15,10 +15,28 @@
         "@typescript-eslint"
     ],
     "rules": {
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "ts": "never"
+            }
+        ],
         "indent": [
             "error",
             "tab"
         ],
         "no-tabs": "off"
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [
+                    ".ts",
+                    ".js"
+                ]
+            }
+        }
     }
 }
