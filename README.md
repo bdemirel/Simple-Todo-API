@@ -6,8 +6,11 @@ Written with NodeJS in TypeScript.
 ### Setting Up
 
 1- Install [sqlite3](https://www.sqlite.org/download.html)
+
 2- Clone this repository
+
 3- `npm install`
+
 4- `npm run start`
 
 ### API Reference
